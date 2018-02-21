@@ -1,0 +1,8 @@
+{ 
+  "id": "#number",
+  "name": "ThirdSeries",
+  "episodes": [
+    { "id": "#(myseries.id)", "name": "MySeries" },
+    { "id": "#(yourseries.id)", "name": "YourSeries" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "nwebseries": [
+    {
+      "episode1": "Episode1",
+      "episode2": "Episode2"
+    },
+    {
+      "episode1": "Episode3",
+      "episode2": "Episode4"
+    }
+  ]
+}
