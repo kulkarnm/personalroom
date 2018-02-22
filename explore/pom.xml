@@ -3,14 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.karate.sample</groupId>
-    <artifactId>karate-sample</artifactId>
+    <artifactId>explore</artifactId>
     <version>0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
+    <parent>
+        <groupId>com.karate.sample</groupId>
+        <artifactId>karate-sample</artifactId>
+        <version>0.1-SNAPSHOT</version>
 
-    <modules>
-        <module>explore</module>
-        <module>samplapp</module>
-    </modules>
+    </parent>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
@@ -90,7 +92,7 @@
     <build>
         <testResources>
             <testResource>
-                <directory>explore/src/</directory>
+                <directory>explore/src/java</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
