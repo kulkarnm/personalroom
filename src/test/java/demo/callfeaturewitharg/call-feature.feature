@@ -25,9 +25,8 @@ Scenario: create episodes and then create parent webSeries
     * def myseries = episodes.myseries
     * def yourseries = episodes.yourseries
 
-    # create mom webSeries
+    # create webSeries
     Given path 'webseries'
-    # sometimes, enclosed javascript is more convenient than embedded expressions
     And request ({ name: 'ThirdSeries', episodes: [myseries, yourseries] })
     When method post
     Then status 200
@@ -39,4 +38,4 @@ Scenario: create episodes and then create parent webSeries
     When method get
     Then status 200
     And match each response == { id: '#number', name: '#string' }
-    And match response contains { id: '#(yourseries.id)', name: 'YourSeries' }
+    And match response contains { id: '#(series1.id)', name: 'MySeries' }

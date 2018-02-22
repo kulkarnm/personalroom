@@ -3,7 +3,7 @@ Feature: dynamically creating json for a data-driven test
 Background:
 * url demoBaseUrl
 
-* def creator = read('../callarray/webseries-create.feature')
+* def creator = read('../readfeaturejson/webseries-create.feature')
 
 * def episodesFn =
 """

@@ -2,7 +2,7 @@
   "id": "#number",
   "name": "ThirdSeries",
   "episodes": [
-    { "id": "#(myseries.id)", "name": "MySeries" },
-    { "id": "#(yourseries.id)", "name": "YourSeries" }
+    { "id": "#(series1.id)", "name": "MySeries" },
+    { "id": "#(series2.id)", "name": "YourSeries" }
   ]
 }

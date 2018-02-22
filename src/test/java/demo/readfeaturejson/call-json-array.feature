@@ -7,9 +7,6 @@ Background:
 * def episodes = read('episodes.json')
 * def result = call creator episodes
 
-# the above could be written in one line as follows
-# * def result = call read('webseries-create.feature') read('webseries.json')
-
 * def created = $result[*].response
 
 Scenario: create parent webSeries using episodes

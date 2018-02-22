@@ -5,14 +5,14 @@ Background:
 * url demoBaseUrl
 
 * table episodes
-    | name      | count |
-    | 'Episode1'   | 2   |
-    | 'Episode2'   | 1   |
-    | 'Episode3'   | 3   |
+    | name          | count |
+    | 'Episode1'    | 2     |
+    | 'Episode2'    | 1     |
+    | 'Episode3'    | 3     |
 
-* def result = callonce read('../callarray/webseries-create.feature') episodes
+* def result = callonce read('../readfeaturejson/webseries-create.feature') episodes
 
-Scenario Outline: various tests on the cats created
+Scenario Outline: various tests on the webseries created
 
     Given path 'webseries'
     When method get

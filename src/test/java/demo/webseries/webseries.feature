@@ -22,7 +22,7 @@ When method get
 Then status 200
 And match response == { id: '#(id)', name: 'mywebseries' }
 
-# get all cats
+# get all webseries
 Given path 'webseries'
 When method get
 Then status 200

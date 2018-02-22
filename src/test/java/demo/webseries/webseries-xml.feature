@@ -1,4 +1,4 @@
-Feature: cats end-point and xml
+Feature: webseries end-point and xml
 
 Background:
 * url demoBaseUrl
@@ -8,9 +8,9 @@ Background:
 # responses default to json otherwise
 * configure headers = { Accept: 'application/xml' }
 
-Scenario: create and retrieve a webSeries
+Scenario: create and retrieve a webseries
 
-# create a new webSeries
+# create a new webseries
 Given path 'webseries'
 And request <webSeries><name>MyWebSeries</name></webSeries>
 When method post

@@ -1,10 +1,10 @@
-Feature: test delete
+Feature: delete entity by itself or by id
 
 Background:
 * url demoBaseUrl
 
 Given path 'webseries'
-And request { name: 'Billie' }
+And request { name: 'MyWebSeries' }
 When method post
 Then status 200
 * def webSeries = response
